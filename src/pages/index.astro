@@ -1,0 +1,116 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="login">
+    <div class="grid grid-cols-3 h-screen">
+        <div
+            class="col-span-2 bg-cover hidden bg-no-repeat xl:block bg-center section-bg"
+        >
+        </div>
+        <div class="col-span-1 bg-color-login items-center">
+            <div class="grid mt-60 gap-4 justify-items-center">
+                <p class="text-lg font-medium lg:text-3xl text-white">
+                    Hola, soy
+                </p>
+                <img
+                    src="https://cdn.idat.edu.pe/eva/img/svg/logo-eva.svg"
+                    alt="Logo Eva"
+                    class="w-56"
+                />
+                <p class="mt-9 text-white text-center text-3xl font-bold">
+                    ¡Me encanta que <br /> estés aquí!
+                </p>
+                <div class="mt-8 w-1/2">
+                    <form id="login-form" class="flex flex-col">
+                        <input
+                            name="codigo"
+                            data-v-dc8174cc=""
+                            id="codigo"
+                            autocomplete="off"
+                            class="flex items-center justify-center p-2 rounded-lg placeholder:text-sm w-full"
+                            maxlength=""
+                            min="4"
+                            placeholder="Por favor, ingresa tu código de usuario"
+                            type="text"
+                        />
+                        <input
+                            name="password"
+                            data-v-dc8174cc=""
+                            id="password"
+                            autocomplete="off"
+                            class="flex items-center justify-center p-2 rounded-lg placeholder:text-sm w-full mt-4"
+                            maxlength=""
+                            min="4"
+                            placeholder="Y aquí tu contraseña	"
+                            type="text"
+                        />
+
+                        <button
+                            class="button-c w-full mt-5 p-2 text-white text-sm font-semibold"
+                            >Comencemos</button
+                        >
+                    </form>
+
+                    <a
+                        href=""
+                        class="mt-5 text-white delineado text-sm font-semibold text-center flex justify-center"
+                    >
+                        olvide mi contraseña
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<script>
+    const form = document.getElementById("login-form");
+    form?.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const input1 = document.getElementById("codigo") as HTMLInputElement;
+        const input2 = document.getElementById("password") as HTMLInputElement;
+        const codigo = input1.value;
+        const password = input2.value;
+
+        if (codigo === "LN74950169" && password === "Gi@nmarco159789$") {
+            setTimeout(() => {
+                window.location.href = "/dashboard";
+            }, 1500);
+        }
+    });
+</script>
+
+<style>
+    .delineado {
+        text-decoration: underline;
+    }
+    .button-c {
+        background-color: rgba(23, 23, 23, 1);
+    }
+    .frase-contenedor {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .bg-color-login {
+        background-color: rgba(114, 42, 233, 1);
+    }
+
+    .section-bg {
+        background-image: url("/login.jpg");
+    }
+    .brand-logo {
+        height: 141px;
+    }
+    .container-login {
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        width: 100%;
+    }
+</style>

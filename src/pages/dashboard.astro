@@ -1,0 +1,957 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<header
+			class="bg-white border border-b-1 px-5 py-3 flex justify-between items-center"
+		>
+			<p class="text-xl text-black font-bold">Inicio</p>
+
+			<div class="flex gap-7 items-center">
+				<a href="/info" class="text-black">
+					<svg
+						data-v-67af033a=""
+						data-v-2dabcd70=""
+						fill="none"
+						viewBox="0 0 20 20"
+						height="20px"
+						width="20px"
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-inactive icon"
+						style="--59e8faf7: #737373; --4aad4fc2: #737373; --2f37773c: #722AE9;"
+					>
+						<g
+							xmlns="http://www.w3.org/2000/svg"
+							clip-path="url(#clip0_1518_36577)"
+						>
+							<path
+								d="M10 0C8.02219 0 6.08879 0.58649 4.4443 1.6853C2.79981 2.78412 1.51809 4.34591 0.761209 6.17317C0.00433286 8.00043 -0.193701 10.0111 0.192152 11.9509C0.578004 13.8907 1.53041 15.6725 2.92894 17.0711C4.32746 18.4696 6.10929 19.422 8.0491 19.8079C9.98891 20.1937 11.9996 19.9957 13.8268 19.2388C15.6541 18.4819 17.2159 17.2002 18.3147 15.5557C19.4135 13.9112 20 11.9778 20 10C19.9971 7.34872 18.9426 4.80684 17.0679 2.9321C15.1932 1.05736 12.6513 0.00286757 10 0ZM10 18.3333C8.35183 18.3333 6.74066 17.8446 5.37025 16.9289C3.99984 16.0132 2.93174 14.7117 2.30101 13.189C1.67028 11.6663 1.50525 9.99076 1.82679 8.37425C2.14834 6.75774 2.94201 5.27288 4.10745 4.10744C5.27289 2.94201 6.75774 2.14833 8.37425 1.82679C9.99076 1.50525 11.6663 1.67027 13.189 2.301C14.7118 2.93173 16.0132 3.99984 16.9289 5.37025C17.8446 6.74066 18.3333 8.35182 18.3333 10C18.3309 12.2094 17.4522 14.3276 15.8899 15.8899C14.3276 17.4522 12.2094 18.3309 10 18.3333Z"
+								fill="currentColor"></path>
+							<path
+								d="M10.5976 4.21889C10.1171 4.13134 9.62313 4.15046 9.15078 4.27493C8.67844 4.39939 8.23921 4.62615 7.8642 4.93915C7.48919 5.25215 7.18755 5.64374 6.98063 6.08623C6.77372 6.52871 6.66657 7.01126 6.66679 7.49973C6.66679 7.72074 6.75459 7.9327 6.91087 8.08898C7.06715 8.24526 7.27911 8.33306 7.50012 8.33306C7.72114 8.33306 7.9331 8.24526 8.08938 8.08898C8.24566 7.9327 8.33346 7.72074 8.33346 7.49973C8.33325 7.25454 8.38714 7.01233 8.49128 6.79036C8.59543 6.56839 8.74727 6.37213 8.93597 6.21558C9.12467 6.05904 9.34559 5.94605 9.58297 5.88468C9.82036 5.82331 10.0684 5.81508 10.3093 5.86056C10.6385 5.92446 10.9412 6.08505 11.1787 6.3218C11.4162 6.55855 11.5777 6.86073 11.6426 7.18973C11.7082 7.53506 11.6629 7.89229 11.5132 8.21034C11.3636 8.52839 11.1172 8.79098 10.8093 8.96056C10.2994 9.25595 9.87811 9.68266 9.58923 10.1962C9.30034 10.7098 9.15446 11.2914 9.16679 11.8806V12.4997C9.16679 12.7207 9.25459 12.9327 9.41087 13.089C9.56715 13.2453 9.77911 13.3331 10.0001 13.3331C10.2211 13.3331 10.4331 13.2453 10.5894 13.089C10.7457 12.9327 10.8335 12.7207 10.8335 12.4997V11.8806C10.823 11.5906 10.8891 11.3029 11.0252 11.0466C11.1612 10.7903 11.3624 10.5744 11.6085 10.4206C12.2122 10.089 12.6984 9.57844 13.0002 8.95923C13.302 8.34002 13.4045 7.64252 13.2937 6.96266C13.1829 6.2828 12.8642 5.65397 12.3814 5.16264C11.8986 4.67131 11.2754 4.34161 10.5976 4.21889Z"
+								fill="currentColor"></path>
+							<path
+								d="M10.8335 14.9997C10.8335 14.5395 10.4604 14.1664 10.0001 14.1664C9.5399 14.1664 9.16681 14.5395 9.16681 14.9997C9.16681 15.46 9.5399 15.8331 10.0001 15.8331C10.4604 15.8331 10.8335 15.46 10.8335 14.9997Z"
+								fill="currentColor"></path>
+						</g>
+						<defs xmlns="http://www.w3.org/2000/svg">
+							<clipPath id="clip0_1518_36577">
+								<rect width="20" height="20" fill="white"
+								></rect>
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+				<a href="/mesanjes" class="text-black>">
+					<svg
+						data-v-67af033a=""
+						data-v-2dabcd70=""
+						fill="none"
+						viewBox="0 0 20 20"
+						height="20px"
+						width="20px"
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-inactive icon"
+						style="--59e8faf7: #737373; --4aad4fc2: #737373; --2f37773c: #722AE9;"
+					>
+						<g
+							xmlns="http://www.w3.org/2000/svg"
+							clip-path="url(#clip0_1518_36530)"
+						>
+							<path
+								d="M15.8333 0.833191H4.16667C3.062 0.834514 2.00296 1.27393 1.22185 2.05504C0.440735 2.83616 0.00132321 3.8952 0 4.99986V14.9999C0.00132321 16.1045 0.440735 17.1636 1.22185 17.9447C2.00296 18.7258 3.062 19.1652 4.16667 19.1665H15.8333C16.938 19.1652 17.997 18.7258 18.7782 17.9447C19.5593 17.1636 19.9987 16.1045 20 14.9999V4.99986C19.9987 3.8952 19.5593 2.83616 18.7782 2.05504C17.997 1.27393 16.938 0.834514 15.8333 0.833191ZM4.16667 2.49986H15.8333C16.3323 2.50084 16.8196 2.65112 17.2325 2.93136C17.6453 3.2116 17.9649 3.60898 18.15 4.07236L11.7683 10.4549C11.2987 10.9226 10.6628 11.1852 10 11.1852C9.33715 11.1852 8.70131 10.9226 8.23167 10.4549L1.85 4.07236C2.03512 3.60898 2.35468 3.2116 2.76754 2.93136C3.1804 2.65112 3.66768 2.50084 4.16667 2.49986ZM15.8333 17.4999H4.16667C3.50363 17.4999 2.86774 17.2365 2.3989 16.7676C1.93006 16.2988 1.66667 15.6629 1.66667 14.9999V6.24986L7.05333 11.6332C7.83552 12.4134 8.89521 12.8516 10 12.8516C11.1048 12.8516 12.1645 12.4134 12.9467 11.6332L18.3333 6.24986V14.9999C18.3333 15.6629 18.0699 16.2988 17.6011 16.7676C17.1323 17.2365 16.4964 17.4999 15.8333 17.4999Z"
+								fill="currentColor"></path>
+						</g>
+						<defs xmlns="http://www.w3.org/2000/svg">
+							<clipPath id="clip0_1518_36530">
+								<rect width="20" height="20" fill="white"
+								></rect>
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+				<div class="flex items-center gap-3">
+					<img
+						src="https://cdn.idat.edu.pe/eva/fotoPerfil/ab39c21d-5ee2-41f2-a8b0-b41e5617677c.jpg"
+						alt="gianmarco"
+						class="w-6 h-6 rounded-full"
+					/>
+					<span class="text-xs font-semibold">Gian Marco Pablo Tot</span>
+				</div>
+			</div>
+		</header>
+
+		<div class="flex">
+			<div class="w-[1300px]">
+				<div class="w-[925px] mx-auto">
+					<input
+						type="text"
+						placeholder="!Hola, Gian Marco Pablo Tot! ¿qué publicación o perfil estas buscando"
+						class="w-full mt-7 border border-gray-300 px-3 py-2 rounded-lg text-sm"
+					/>
+
+					<div class="mt-4 bg-white p-4">
+						<div class="flex gap-3 w-full">
+							<img
+								src="/user1.jpg"
+								alt="img"
+								class="w-10 h-10 rounded-full"
+							/>
+							<div>
+								<p class="font-semibold text-sm">Inovación</p>
+								<p class="text-xs">
+									Andra Arcela . hace 24 hora
+								</p>
+							</div>
+						</div>
+
+						<p class="mt-2 text-sm">
+							📢 ¡SE POSTERGA EL INICIO DE CLASES! - NUEVO INICIO
+							LUNES 20 DE MAYO📢
+						</p>
+
+						<img
+							class="w-full mt-2"
+							src="/posts/post1.png"
+							alt=""
+						/>
+
+						<div class="flex gap-3 mt-3 items-center">
+							<svg
+								fill="none"
+								viewBox="0 0 25 25"
+								height="25"
+								width="25"
+								xmlns="http://www.w3.org/2000/svg"
+								name="me-interesa-circle"
+								class="icon h-5 md:h-6"
+								style="color: rgb(127, 135, 148); --0632e914: #7F8794; --03eb0660: #722AE9;"
+							>
+								<circle
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#F5F5F5"
+									cx="12.5"
+									cy="12.5"
+									r="12.5"></circle>
+								<g xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill="currentColor"
+										d="M19.375 9.36687H15.17L13.7787 5.01937H11.2213L9.83 9.36687H5.625L5 12.1587L8.1875 14.4925L6.60437 19.405L9.3075 20.0194L12.5 17.6644L15.695 20.0194L18.3975 19.4025L16.8125 14.4925L20 12.1587L19.375 9.36687Z"
+									></path>
+								</g>
+								<defs xmlns="http://www.w3.org/2000/svg">
+									<clipPath>
+										<rect
+											width="15"
+											height="15"
+											fill="white"
+											transform="translate(5 5)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+							<svg
+								data-v-1df29c1a=""
+								data-v-88317d94=""
+								fill="none"
+								viewBox="0 0 25 25"
+								height="25"
+								width="25"
+								xmlns="http://www.w3.org/2000/svg"
+								name="me-emociona-circle"
+								class="icon h-5 md:h-6"
+								style="color: rgb(127, 135, 148); --0632e914: #7F8794; --03eb0660: #722AE9;"
+							>
+								<circle
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#F5F5F5"
+									cx="12.5"
+									cy="12.5"
+									r="12.5"></circle>
+								<g xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill="currentColor"
+										d="M12.4997 19.6638L11.9585 19.2813C11.246 18.7775 4.99973 14.2394 4.99973 10.0938C4.95932 8.93218 5.3804 7.80186 6.17093 6.94984C6.96146 6.09782 8.05714 5.59342 9.21848 5.54688C9.85952 5.55317 10.4902 5.70948 11.06 6.00327C11.6297 6.29706 12.1228 6.72018 12.4997 7.23875C12.8766 6.72018 13.3697 6.29706 13.9395 6.00327C14.5093 5.70948 15.1399 5.55317 15.781 5.54688C16.9423 5.59342 18.038 6.09782 18.8285 6.94984C19.6191 7.80186 20.0401 8.93218 19.9997 10.0938C19.9997 14.2394 13.7535 18.7775 13.041 19.2813L12.4997 19.6638Z"
+									></path>
+								</g>
+								<defs xmlns="http://www.w3.org/2000/svg">
+									<clipPath>
+										<rect
+											width="15"
+											height="15"
+											fill="white"
+											transform="translate(5 5)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+							<svg
+								data-v-1df29c1a=""
+								data-v-88317d94=""
+								fill="none"
+								viewBox="0 0 25 25"
+								height="25"
+								width="25"
+								xmlns="http://www.w3.org/2000/svg"
+								name="me-enorgullece-circle"
+								class="icon h-5 md:h-6"
+								style="color: rgb(127, 135, 148); --0632e914: #7F8794; --03eb0660: #722AE9;"
+							>
+								<circle
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#F5F5F5"
+									cx="12.5"
+									cy="12.5"
+									r="12.5"></circle>
+								<path
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									d="M18.125 18.875H6.875C6.37772 18.875 5.90081 18.6775 5.54917 18.3258C5.19754 17.9742 5 17.4973 5 17V6.125L8.92 10.0475L12.5 6.4675L16.08 10.0475L20 6.125V17C20 17.4973 19.8025 17.9742 19.4508 18.3258C19.0992 18.6775 18.6223 18.875 18.125 18.875Z"
+								></path>
+							</svg>
+							<span class="post-actions">60</span>
+						</div>
+
+						<section class="posts-actions mt-6">
+							<button
+								class="flex align-middle justify-center gap-3"
+							>
+								<svg
+									data-v-1df29c1a=""
+									data-v-88317d94=""
+									fill="none"
+									viewBox="0 0 20 20"
+									height="20"
+									width="20"
+									xmlns="http://www.w3.org/2000/svg"
+									name="me-interesa"
+									class="svg w-3 h-3 md:h-5 md:w-5"
+									style="--03eb0660: #722AE9;"
+								>
+									<path
+										xmlns="http://www.w3.org/2000/svg"
+										fill="currentColor"
+										d="M19.1667 5.82248H13.56L11.705 0.0258179H8.295L6.44 5.82248H0.833333L0 9.54498L4.25 12.6566L2.13917 19.2066L5.74333 20.0258L10 16.8858L14.26 20.0258L17.8633 19.2033L15.75 12.6566L20 9.54498L19.1667 5.82248ZM12.8183 11.7016L14.5683 17.1458L10 13.775L5.4275 17.1458L7.18167 11.7016L2.57833 8.32915H8.26333L10 2.90165L11.7367 8.32915H17.4217L12.8183 11.7016Z"
+									></path>
+								</svg>
+								Me interesa</button
+							>
+							<button
+								class="flex align-middle justify-center gap-3"
+							>
+								<svg
+									data-v-1df29c1a=""
+									data-v-88317d94=""
+									fill="none"
+									viewBox="0 0 20 20"
+									height="20"
+									width="20"
+									xmlns="http://www.w3.org/2000/svg"
+									name="me-emociona"
+									class="svg w-3 h-3 md:h-5 md:w-5"
+									style="--03eb0660: #722AE9;"
+								>
+									<path
+										xmlns="http://www.w3.org/2000/svg"
+										fill="currentColor"
+										d="M9.99964 19.5517L9.27798 19.0417C8.32798 18.37 -0.000357016 12.3192 -0.000357016 6.79169C-0.0542402 5.24293 0.5072 3.73583 1.56124 2.59981C2.61528 1.46378 4.07619 0.791242 5.62464 0.729187C6.47936 0.737587 7.32024 0.945991 8.07995 1.33771C8.83966 1.72944 9.49711 2.2936 9.99964 2.98502C10.5022 2.2936 11.1596 1.72944 11.9193 1.33771C12.679 0.945991 13.5199 0.737587 14.3746 0.729187C15.9231 0.791242 17.384 1.46378 18.438 2.59981C19.4921 3.73583 20.0535 5.24293 19.9996 6.79169C19.9996 12.3192 11.6713 18.37 10.7213 19.0417L9.99964 19.5517ZM5.62464 3.22919C4.73961 3.29189 3.91504 3.70118 3.32996 4.36817C2.74488 5.03517 2.44651 5.90603 2.49964 6.79169C2.49964 10.055 7.38548 14.4667 9.99964 16.4675C12.6138 14.4675 17.4996 10.055 17.4996 6.79169C17.5528 5.90603 17.2544 5.03517 16.6693 4.36817C16.0842 3.70118 15.2597 3.29189 14.3746 3.22919C13.4896 3.29189 12.665 3.70118 12.08 4.36817C11.4949 5.03517 11.1965 5.90603 11.2496 6.79169H8.74964C8.80277 5.90603 8.50441 5.03517 7.91932 4.36817C7.33424 3.70118 6.50967 3.29189 5.62464 3.22919Z"
+									></path>
+								</svg>
+								Me Emociona</button
+							>
+							<button
+								class="flex align-middle justify-center gap-3"
+							>
+								<svg
+									data-v-1df29c1a=""
+									data-v-88317d94=""
+									fill="none"
+									viewBox="0 0 20 18"
+									height="18"
+									width="20"
+									xmlns="http://www.w3.org/2000/svg"
+									name="me-enorgullece"
+									class="svg w-3 h-3 md:h-5 md:w-5"
+									style="--03eb0660: #722AE9;"
+								>
+									<path
+										xmlns="http://www.w3.org/2000/svg"
+										fill="currentColor"
+										d="M17.5 17.5H2.5C1.83696 17.5 1.20107 17.2366 0.732233 16.7678C0.263392 16.2989 0 15.663 0 15L0 0.5L5.22667 5.73L10 0.956667L14.7733 5.73L20 0.5V15C20 15.663 19.7366 16.2989 19.2678 16.7678C18.7989 17.2366 18.163 17.5 17.5 17.5ZM2.5 6.5375V15H17.5V6.5375L14.7733 9.265L10 4.49167L5.22667 9.265L2.5 6.5375Z"
+									></path>
+								</svg>
+								Me enorgullece</button
+							>
+						</section>
+					</div>
+					<div class="mt-4 bg-white p-4">
+						<div class="flex gap-3 w-full">
+							<img
+								src="/user3.jpg"
+								alt="img"
+								class="w-10 h-10 rounded-full"
+							/>
+							<div>
+								<p class="font-semibold text-sm">Inovación</p>
+								<p class="text-xs">
+									Andra Arcela . hace 24 hora
+								</p>
+							</div>
+						</div>
+
+						<p class="mt-2 text-sm">
+							📢 ¡SE POSTERGA EL INICIO DE CLASES! - NUEVO INICIO
+							LUNES 20 DE MAYO📢
+						</p>
+
+						<img
+							class="w-full mt-2"
+							src="https://cdn.idat.edu.pe/eva/publicaciones/imagenes/93ded1d7-4061-433c-a084-2c0f5dba78d3.png"
+							alt=""
+						/>
+
+						<div class="flex gap-3 mt-3 items-center">
+							<svg
+								fill="none"
+								viewBox="0 0 25 25"
+								height="25"
+								width="25"
+								xmlns="http://www.w3.org/2000/svg"
+								name="me-interesa-circle"
+								class="icon h-5 md:h-6"
+								style="color: rgb(127, 135, 148); --0632e914: #7F8794; --03eb0660: #722AE9;"
+							>
+								<circle
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#F5F5F5"
+									cx="12.5"
+									cy="12.5"
+									r="12.5"></circle>
+								<g xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill="currentColor"
+										d="M19.375 9.36687H15.17L13.7787 5.01937H11.2213L9.83 9.36687H5.625L5 12.1587L8.1875 14.4925L6.60437 19.405L9.3075 20.0194L12.5 17.6644L15.695 20.0194L18.3975 19.4025L16.8125 14.4925L20 12.1587L19.375 9.36687Z"
+									></path>
+								</g>
+								<defs xmlns="http://www.w3.org/2000/svg">
+									<clipPath>
+										<rect
+											width="15"
+											height="15"
+											fill="white"
+											transform="translate(5 5)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+							<svg
+								data-v-1df29c1a=""
+								data-v-88317d94=""
+								fill="none"
+								viewBox="0 0 25 25"
+								height="25"
+								width="25"
+								xmlns="http://www.w3.org/2000/svg"
+								name="me-emociona-circle"
+								class="icon h-5 md:h-6"
+								style="color: rgb(127, 135, 148); --0632e914: #7F8794; --03eb0660: #722AE9;"
+							>
+								<circle
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#F5F5F5"
+									cx="12.5"
+									cy="12.5"
+									r="12.5"></circle>
+								<g xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill="currentColor"
+										d="M12.4997 19.6638L11.9585 19.2813C11.246 18.7775 4.99973 14.2394 4.99973 10.0938C4.95932 8.93218 5.3804 7.80186 6.17093 6.94984C6.96146 6.09782 8.05714 5.59342 9.21848 5.54688C9.85952 5.55317 10.4902 5.70948 11.06 6.00327C11.6297 6.29706 12.1228 6.72018 12.4997 7.23875C12.8766 6.72018 13.3697 6.29706 13.9395 6.00327C14.5093 5.70948 15.1399 5.55317 15.781 5.54688C16.9423 5.59342 18.038 6.09782 18.8285 6.94984C19.6191 7.80186 20.0401 8.93218 19.9997 10.0938C19.9997 14.2394 13.7535 18.7775 13.041 19.2813L12.4997 19.6638Z"
+									></path>
+								</g>
+								<defs xmlns="http://www.w3.org/2000/svg">
+									<clipPath>
+										<rect
+											width="15"
+											height="15"
+											fill="white"
+											transform="translate(5 5)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+							<svg
+								data-v-1df29c1a=""
+								data-v-88317d94=""
+								fill="none"
+								viewBox="0 0 25 25"
+								height="25"
+								width="25"
+								xmlns="http://www.w3.org/2000/svg"
+								name="me-enorgullece-circle"
+								class="icon h-5 md:h-6"
+								style="color: rgb(127, 135, 148); --0632e914: #7F8794; --03eb0660: #722AE9;"
+							>
+								<circle
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#F5F5F5"
+									cx="12.5"
+									cy="12.5"
+									r="12.5"></circle>
+								<path
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									d="M18.125 18.875H6.875C6.37772 18.875 5.90081 18.6775 5.54917 18.3258C5.19754 17.9742 5 17.4973 5 17V6.125L8.92 10.0475L12.5 6.4675L16.08 10.0475L20 6.125V17C20 17.4973 19.8025 17.9742 19.4508 18.3258C19.0992 18.6775 18.6223 18.875 18.125 18.875Z"
+								></path>
+							</svg>
+							<span class="post-actions">60</span>
+						</div>
+
+						<section class="posts-actions mt-6">
+							<button
+								class="flex align-middle justify-center gap-3"
+							>
+								<svg
+									data-v-1df29c1a=""
+									data-v-88317d94=""
+									fill="none"
+									viewBox="0 0 20 20"
+									height="20"
+									width="20"
+									xmlns="http://www.w3.org/2000/svg"
+									name="me-interesa"
+									class="svg w-3 h-3 md:h-5 md:w-5"
+									style="--03eb0660: #722AE9;"
+								>
+									<path
+										xmlns="http://www.w3.org/2000/svg"
+										fill="currentColor"
+										d="M19.1667 5.82248H13.56L11.705 0.0258179H8.295L6.44 5.82248H0.833333L0 9.54498L4.25 12.6566L2.13917 19.2066L5.74333 20.0258L10 16.8858L14.26 20.0258L17.8633 19.2033L15.75 12.6566L20 9.54498L19.1667 5.82248ZM12.8183 11.7016L14.5683 17.1458L10 13.775L5.4275 17.1458L7.18167 11.7016L2.57833 8.32915H8.26333L10 2.90165L11.7367 8.32915H17.4217L12.8183 11.7016Z"
+									></path>
+								</svg>
+								Me interesa</button
+							>
+							<button
+								class="flex align-middle justify-center gap-3"
+							>
+								<svg
+									data-v-1df29c1a=""
+									data-v-88317d94=""
+									fill="none"
+									viewBox="0 0 20 20"
+									height="20"
+									width="20"
+									xmlns="http://www.w3.org/2000/svg"
+									name="me-emociona"
+									class="svg w-3 h-3 md:h-5 md:w-5"
+									style="--03eb0660: #722AE9;"
+								>
+									<path
+										xmlns="http://www.w3.org/2000/svg"
+										fill="currentColor"
+										d="M9.99964 19.5517L9.27798 19.0417C8.32798 18.37 -0.000357016 12.3192 -0.000357016 6.79169C-0.0542402 5.24293 0.5072 3.73583 1.56124 2.59981C2.61528 1.46378 4.07619 0.791242 5.62464 0.729187C6.47936 0.737587 7.32024 0.945991 8.07995 1.33771C8.83966 1.72944 9.49711 2.2936 9.99964 2.98502C10.5022 2.2936 11.1596 1.72944 11.9193 1.33771C12.679 0.945991 13.5199 0.737587 14.3746 0.729187C15.9231 0.791242 17.384 1.46378 18.438 2.59981C19.4921 3.73583 20.0535 5.24293 19.9996 6.79169C19.9996 12.3192 11.6713 18.37 10.7213 19.0417L9.99964 19.5517ZM5.62464 3.22919C4.73961 3.29189 3.91504 3.70118 3.32996 4.36817C2.74488 5.03517 2.44651 5.90603 2.49964 6.79169C2.49964 10.055 7.38548 14.4667 9.99964 16.4675C12.6138 14.4675 17.4996 10.055 17.4996 6.79169C17.5528 5.90603 17.2544 5.03517 16.6693 4.36817C16.0842 3.70118 15.2597 3.29189 14.3746 3.22919C13.4896 3.29189 12.665 3.70118 12.08 4.36817C11.4949 5.03517 11.1965 5.90603 11.2496 6.79169H8.74964C8.80277 5.90603 8.50441 5.03517 7.91932 4.36817C7.33424 3.70118 6.50967 3.29189 5.62464 3.22919Z"
+									></path>
+								</svg>
+								Me Emociona</button
+							>
+							<button
+								class="flex align-middle justify-center gap-3"
+							>
+								<svg
+									data-v-1df29c1a=""
+									data-v-88317d94=""
+									fill="none"
+									viewBox="0 0 20 18"
+									height="18"
+									width="20"
+									xmlns="http://www.w3.org/2000/svg"
+									name="me-enorgullece"
+									class="svg w-3 h-3 md:h-5 md:w-5"
+									style="--03eb0660: #722AE9;"
+								>
+									<path
+										xmlns="http://www.w3.org/2000/svg"
+										fill="currentColor"
+										d="M17.5 17.5H2.5C1.83696 17.5 1.20107 17.2366 0.732233 16.7678C0.263392 16.2989 0 15.663 0 15L0 0.5L5.22667 5.73L10 0.956667L14.7733 5.73L20 0.5V15C20 15.663 19.7366 16.2989 19.2678 16.7678C18.7989 17.2366 18.163 17.5 17.5 17.5ZM2.5 6.5375V15H17.5V6.5375L14.7733 9.265L10 4.49167L5.22667 9.265L2.5 6.5375Z"
+									></path>
+								</svg>
+								Me enorgullece</button
+							>
+						</section>
+					</div>
+				</div>
+
+
+				<div class="w-[925px] mx-auto">
+
+					<div class="mt-4 bg-white p-4">
+						<div class="flex gap-3 w-full">
+							<img
+								src="/user1.jpg"
+								alt="img"
+								class="w-10 h-10 rounded-full"
+							/>
+							<div>
+								<p class="font-semibold text-sm">Inovación</p>
+								<p class="text-xs">
+									Andra Arcela . hace 24 hora
+								</p>
+							</div>
+						</div>
+
+						<p class="mt-2 text-sm">
+							📢 ¡SE POSTERGA EL INICIO DE CLASES! - NUEVO INICIO
+							LUNES 20 DE MAYO📢
+						</p>
+
+						<img
+							class="w-full mt-2"
+							src="https://cdn.idat.edu.pe/eva/publicaciones/imagenes/0119b6fb-e1ba-4f20-a948-ecf5d8cba67b.png"
+							alt=""
+						/>
+
+						<div class="flex gap-3 mt-3 items-center">
+							<svg
+								fill="none"
+								viewBox="0 0 25 25"
+								height="25"
+								width="25"
+								xmlns="http://www.w3.org/2000/svg"
+								name="me-interesa-circle"
+								class="icon h-5 md:h-6"
+								style="color: rgb(127, 135, 148); --0632e914: #7F8794; --03eb0660: #722AE9;"
+							>
+								<circle
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#F5F5F5"
+									cx="12.5"
+									cy="12.5"
+									r="12.5"></circle>
+								<g xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill="currentColor"
+										d="M19.375 9.36687H15.17L13.7787 5.01937H11.2213L9.83 9.36687H5.625L5 12.1587L8.1875 14.4925L6.60437 19.405L9.3075 20.0194L12.5 17.6644L15.695 20.0194L18.3975 19.4025L16.8125 14.4925L20 12.1587L19.375 9.36687Z"
+									></path>
+								</g>
+								<defs xmlns="http://www.w3.org/2000/svg">
+									<clipPath>
+										<rect
+											width="15"
+											height="15"
+											fill="white"
+											transform="translate(5 5)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+							<svg
+								data-v-1df29c1a=""
+								data-v-88317d94=""
+								fill="none"
+								viewBox="0 0 25 25"
+								height="25"
+								width="25"
+								xmlns="http://www.w3.org/2000/svg"
+								name="me-emociona-circle"
+								class="icon h-5 md:h-6"
+								style="color: rgb(127, 135, 148); --0632e914: #7F8794; --03eb0660: #722AE9;"
+							>
+								<circle
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#F5F5F5"
+									cx="12.5"
+									cy="12.5"
+									r="12.5"></circle>
+								<g xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill="currentColor"
+										d="M12.4997 19.6638L11.9585 19.2813C11.246 18.7775 4.99973 14.2394 4.99973 10.0938C4.95932 8.93218 5.3804 7.80186 6.17093 6.94984C6.96146 6.09782 8.05714 5.59342 9.21848 5.54688C9.85952 5.55317 10.4902 5.70948 11.06 6.00327C11.6297 6.29706 12.1228 6.72018 12.4997 7.23875C12.8766 6.72018 13.3697 6.29706 13.9395 6.00327C14.5093 5.70948 15.1399 5.55317 15.781 5.54688C16.9423 5.59342 18.038 6.09782 18.8285 6.94984C19.6191 7.80186 20.0401 8.93218 19.9997 10.0938C19.9997 14.2394 13.7535 18.7775 13.041 19.2813L12.4997 19.6638Z"
+									></path>
+								</g>
+								<defs xmlns="http://www.w3.org/2000/svg">
+									<clipPath>
+										<rect
+											width="15"
+											height="15"
+											fill="white"
+											transform="translate(5 5)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+							<svg
+								data-v-1df29c1a=""
+								data-v-88317d94=""
+								fill="none"
+								viewBox="0 0 25 25"
+								height="25"
+								width="25"
+								xmlns="http://www.w3.org/2000/svg"
+								name="me-enorgullece-circle"
+								class="icon h-5 md:h-6"
+								style="color: rgb(127, 135, 148); --0632e914: #7F8794; --03eb0660: #722AE9;"
+							>
+								<circle
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#F5F5F5"
+									cx="12.5"
+									cy="12.5"
+									r="12.5"></circle>
+								<path
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									d="M18.125 18.875H6.875C6.37772 18.875 5.90081 18.6775 5.54917 18.3258C5.19754 17.9742 5 17.4973 5 17V6.125L8.92 10.0475L12.5 6.4675L16.08 10.0475L20 6.125V17C20 17.4973 19.8025 17.9742 19.4508 18.3258C19.0992 18.6775 18.6223 18.875 18.125 18.875Z"
+								></path>
+							</svg>
+							<span class="post-actions">60</span>
+						</div>
+
+						<section class="posts-actions mt-6">
+							<button
+								class="flex align-middle justify-center gap-3"
+							>
+								<svg
+									data-v-1df29c1a=""
+									data-v-88317d94=""
+									fill="none"
+									viewBox="0 0 20 20"
+									height="20"
+									width="20"
+									xmlns="http://www.w3.org/2000/svg"
+									name="me-interesa"
+									class="svg w-3 h-3 md:h-5 md:w-5"
+									style="--03eb0660: #722AE9;"
+								>
+									<path
+										xmlns="http://www.w3.org/2000/svg"
+										fill="currentColor"
+										d="M19.1667 5.82248H13.56L11.705 0.0258179H8.295L6.44 5.82248H0.833333L0 9.54498L4.25 12.6566L2.13917 19.2066L5.74333 20.0258L10 16.8858L14.26 20.0258L17.8633 19.2033L15.75 12.6566L20 9.54498L19.1667 5.82248ZM12.8183 11.7016L14.5683 17.1458L10 13.775L5.4275 17.1458L7.18167 11.7016L2.57833 8.32915H8.26333L10 2.90165L11.7367 8.32915H17.4217L12.8183 11.7016Z"
+									></path>
+								</svg>
+								Me interesa</button
+							>
+							<button
+								class="flex align-middle justify-center gap-3"
+							>
+								<svg
+									data-v-1df29c1a=""
+									data-v-88317d94=""
+									fill="none"
+									viewBox="0 0 20 20"
+									height="20"
+									width="20"
+									xmlns="http://www.w3.org/2000/svg"
+									name="me-emociona"
+									class="svg w-3 h-3 md:h-5 md:w-5"
+									style="--03eb0660: #722AE9;"
+								>
+									<path
+										xmlns="http://www.w3.org/2000/svg"
+										fill="currentColor"
+										d="M9.99964 19.5517L9.27798 19.0417C8.32798 18.37 -0.000357016 12.3192 -0.000357016 6.79169C-0.0542402 5.24293 0.5072 3.73583 1.56124 2.59981C2.61528 1.46378 4.07619 0.791242 5.62464 0.729187C6.47936 0.737587 7.32024 0.945991 8.07995 1.33771C8.83966 1.72944 9.49711 2.2936 9.99964 2.98502C10.5022 2.2936 11.1596 1.72944 11.9193 1.33771C12.679 0.945991 13.5199 0.737587 14.3746 0.729187C15.9231 0.791242 17.384 1.46378 18.438 2.59981C19.4921 3.73583 20.0535 5.24293 19.9996 6.79169C19.9996 12.3192 11.6713 18.37 10.7213 19.0417L9.99964 19.5517ZM5.62464 3.22919C4.73961 3.29189 3.91504 3.70118 3.32996 4.36817C2.74488 5.03517 2.44651 5.90603 2.49964 6.79169C2.49964 10.055 7.38548 14.4667 9.99964 16.4675C12.6138 14.4675 17.4996 10.055 17.4996 6.79169C17.5528 5.90603 17.2544 5.03517 16.6693 4.36817C16.0842 3.70118 15.2597 3.29189 14.3746 3.22919C13.4896 3.29189 12.665 3.70118 12.08 4.36817C11.4949 5.03517 11.1965 5.90603 11.2496 6.79169H8.74964C8.80277 5.90603 8.50441 5.03517 7.91932 4.36817C7.33424 3.70118 6.50967 3.29189 5.62464 3.22919Z"
+									></path>
+								</svg>
+								Me Emociona</button
+							>
+							<button
+								class="flex align-middle justify-center gap-3"
+							>
+								<svg
+									data-v-1df29c1a=""
+									data-v-88317d94=""
+									fill="none"
+									viewBox="0 0 20 18"
+									height="18"
+									width="20"
+									xmlns="http://www.w3.org/2000/svg"
+									name="me-enorgullece"
+									class="svg w-3 h-3 md:h-5 md:w-5"
+									style="--03eb0660: #722AE9;"
+								>
+									<path
+										xmlns="http://www.w3.org/2000/svg"
+										fill="currentColor"
+										d="M17.5 17.5H2.5C1.83696 17.5 1.20107 17.2366 0.732233 16.7678C0.263392 16.2989 0 15.663 0 15L0 0.5L5.22667 5.73L10 0.956667L14.7733 5.73L20 0.5V15C20 15.663 19.7366 16.2989 19.2678 16.7678C18.7989 17.2366 18.163 17.5 17.5 17.5ZM2.5 6.5375V15H17.5V6.5375L14.7733 9.265L10 4.49167L5.22667 9.265L2.5 6.5375Z"
+									></path>
+								</svg>
+								Me enorgullece</button
+							>
+						</section>
+					</div>
+					<div class="mt-4 bg-white p-4">
+						<div class="flex gap-3 w-full">
+							<img
+								src="/user3.jpg"
+								alt="img"
+								class="w-10 h-10 rounded-full"
+							/>
+							<div>
+								<p class="font-semibold text-sm">Inovación</p>
+								<p class="text-xs">
+									Andra Arcela . hace 24 hora
+								</p>
+							</div>
+						</div>
+
+						<p class="mt-2 text-sm">
+							📢 ¡SE POSTERGA EL INICIO DE CLASES! - NUEVO INICIO
+							LUNES 20 DE MAYO📢
+						</p>
+
+						<img
+							class="w-full mt-2"
+							src="https://cdn.idat.edu.pe/eva/publicaciones/imagenes/93ded1d7-4061-433c-a084-2c0f5dba78d3.png"
+							alt=""
+						/>
+
+						<div class="flex gap-3 mt-3 items-center">
+							<svg
+								fill="none"
+								viewBox="0 0 25 25"
+								height="25"
+								width="25"
+								xmlns="http://www.w3.org/2000/svg"
+								name="me-interesa-circle"
+								class="icon h-5 md:h-6"
+								style="color: rgb(127, 135, 148); --0632e914: #7F8794; --03eb0660: #722AE9;"
+							>
+								<circle
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#F5F5F5"
+									cx="12.5"
+									cy="12.5"
+									r="12.5"></circle>
+								<g xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill="currentColor"
+										d="M19.375 9.36687H15.17L13.7787 5.01937H11.2213L9.83 9.36687H5.625L5 12.1587L8.1875 14.4925L6.60437 19.405L9.3075 20.0194L12.5 17.6644L15.695 20.0194L18.3975 19.4025L16.8125 14.4925L20 12.1587L19.375 9.36687Z"
+									></path>
+								</g>
+								<defs xmlns="http://www.w3.org/2000/svg">
+									<clipPath>
+										<rect
+											width="15"
+											height="15"
+											fill="white"
+											transform="translate(5 5)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+							<svg
+								data-v-1df29c1a=""
+								data-v-88317d94=""
+								fill="none"
+								viewBox="0 0 25 25"
+								height="25"
+								width="25"
+								xmlns="http://www.w3.org/2000/svg"
+								name="me-emociona-circle"
+								class="icon h-5 md:h-6"
+								style="color: rgb(127, 135, 148); --0632e914: #7F8794; --03eb0660: #722AE9;"
+							>
+								<circle
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#F5F5F5"
+									cx="12.5"
+									cy="12.5"
+									r="12.5"></circle>
+								<g xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill="currentColor"
+										d="M12.4997 19.6638L11.9585 19.2813C11.246 18.7775 4.99973 14.2394 4.99973 10.0938C4.95932 8.93218 5.3804 7.80186 6.17093 6.94984C6.96146 6.09782 8.05714 5.59342 9.21848 5.54688C9.85952 5.55317 10.4902 5.70948 11.06 6.00327C11.6297 6.29706 12.1228 6.72018 12.4997 7.23875C12.8766 6.72018 13.3697 6.29706 13.9395 6.00327C14.5093 5.70948 15.1399 5.55317 15.781 5.54688C16.9423 5.59342 18.038 6.09782 18.8285 6.94984C19.6191 7.80186 20.0401 8.93218 19.9997 10.0938C19.9997 14.2394 13.7535 18.7775 13.041 19.2813L12.4997 19.6638Z"
+									></path>
+								</g>
+								<defs xmlns="http://www.w3.org/2000/svg">
+									<clipPath>
+										<rect
+											width="15"
+											height="15"
+											fill="white"
+											transform="translate(5 5)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+							<svg
+								data-v-1df29c1a=""
+								data-v-88317d94=""
+								fill="none"
+								viewBox="0 0 25 25"
+								height="25"
+								width="25"
+								xmlns="http://www.w3.org/2000/svg"
+								name="me-enorgullece-circle"
+								class="icon h-5 md:h-6"
+								style="color: rgb(127, 135, 148); --0632e914: #7F8794; --03eb0660: #722AE9;"
+							>
+								<circle
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#F5F5F5"
+									cx="12.5"
+									cy="12.5"
+									r="12.5"></circle>
+								<path
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									d="M18.125 18.875H6.875C6.37772 18.875 5.90081 18.6775 5.54917 18.3258C5.19754 17.9742 5 17.4973 5 17V6.125L8.92 10.0475L12.5 6.4675L16.08 10.0475L20 6.125V17C20 17.4973 19.8025 17.9742 19.4508 18.3258C19.0992 18.6775 18.6223 18.875 18.125 18.875Z"
+								></path>
+							</svg>
+							<span class="post-actions">60</span>
+						</div>
+
+						<section class="posts-actions mt-6">
+							<button
+								class="flex align-middle justify-center gap-3"
+							>
+								<svg
+									data-v-1df29c1a=""
+									data-v-88317d94=""
+									fill="none"
+									viewBox="0 0 20 20"
+									height="20"
+									width="20"
+									xmlns="http://www.w3.org/2000/svg"
+									name="me-interesa"
+									class="svg w-3 h-3 md:h-5 md:w-5"
+									style="--03eb0660: #722AE9;"
+								>
+									<path
+										xmlns="http://www.w3.org/2000/svg"
+										fill="currentColor"
+										d="M19.1667 5.82248H13.56L11.705 0.0258179H8.295L6.44 5.82248H0.833333L0 9.54498L4.25 12.6566L2.13917 19.2066L5.74333 20.0258L10 16.8858L14.26 20.0258L17.8633 19.2033L15.75 12.6566L20 9.54498L19.1667 5.82248ZM12.8183 11.7016L14.5683 17.1458L10 13.775L5.4275 17.1458L7.18167 11.7016L2.57833 8.32915H8.26333L10 2.90165L11.7367 8.32915H17.4217L12.8183 11.7016Z"
+									></path>
+								</svg>
+								Me interesa</button
+							>
+							<button
+								class="flex align-middle justify-center gap-3"
+							>
+								<svg
+									data-v-1df29c1a=""
+									data-v-88317d94=""
+									fill="none"
+									viewBox="0 0 20 20"
+									height="20"
+									width="20"
+									xmlns="http://www.w3.org/2000/svg"
+									name="me-emociona"
+									class="svg w-3 h-3 md:h-5 md:w-5"
+									style="--03eb0660: #722AE9;"
+								>
+									<path
+										xmlns="http://www.w3.org/2000/svg"
+										fill="currentColor"
+										d="M9.99964 19.5517L9.27798 19.0417C8.32798 18.37 -0.000357016 12.3192 -0.000357016 6.79169C-0.0542402 5.24293 0.5072 3.73583 1.56124 2.59981C2.61528 1.46378 4.07619 0.791242 5.62464 0.729187C6.47936 0.737587 7.32024 0.945991 8.07995 1.33771C8.83966 1.72944 9.49711 2.2936 9.99964 2.98502C10.5022 2.2936 11.1596 1.72944 11.9193 1.33771C12.679 0.945991 13.5199 0.737587 14.3746 0.729187C15.9231 0.791242 17.384 1.46378 18.438 2.59981C19.4921 3.73583 20.0535 5.24293 19.9996 6.79169C19.9996 12.3192 11.6713 18.37 10.7213 19.0417L9.99964 19.5517ZM5.62464 3.22919C4.73961 3.29189 3.91504 3.70118 3.32996 4.36817C2.74488 5.03517 2.44651 5.90603 2.49964 6.79169C2.49964 10.055 7.38548 14.4667 9.99964 16.4675C12.6138 14.4675 17.4996 10.055 17.4996 6.79169C17.5528 5.90603 17.2544 5.03517 16.6693 4.36817C16.0842 3.70118 15.2597 3.29189 14.3746 3.22919C13.4896 3.29189 12.665 3.70118 12.08 4.36817C11.4949 5.03517 11.1965 5.90603 11.2496 6.79169H8.74964C8.80277 5.90603 8.50441 5.03517 7.91932 4.36817C7.33424 3.70118 6.50967 3.29189 5.62464 3.22919Z"
+									></path>
+								</svg>
+								Me Emociona</button
+							>
+							<button
+								class="flex align-middle justify-center gap-3"
+							>
+								<svg
+									data-v-1df29c1a=""
+									data-v-88317d94=""
+									fill="none"
+									viewBox="0 0 20 18"
+									height="18"
+									width="20"
+									xmlns="http://www.w3.org/2000/svg"
+									name="me-enorgullece"
+									class="svg w-3 h-3 md:h-5 md:w-5"
+									style="--03eb0660: #722AE9;"
+								>
+									<path
+										xmlns="http://www.w3.org/2000/svg"
+										fill="currentColor"
+										d="M17.5 17.5H2.5C1.83696 17.5 1.20107 17.2366 0.732233 16.7678C0.263392 16.2989 0 15.663 0 15L0 0.5L5.22667 5.73L10 0.956667L14.7733 5.73L20 0.5V15C20 15.663 19.7366 16.2989 19.2678 16.7678C18.7989 17.2366 18.163 17.5 17.5 17.5ZM2.5 6.5375V15H17.5V6.5375L14.7733 9.265L10 4.49167L5.22667 9.265L2.5 6.5375Z"
+									></path>
+								</svg>
+								Me enorgullece</button
+							>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-7 w-[340px]">
+				<div class="bg-white h-[680px] p-8 pt-4 rounded-md shadow-md">
+					<div class="flex justify-evenly gap-3">
+						<p class="text-sm text-[#722ae9] font-semibold border-b border-[#722ae9]">Mis unidades didacticas</p>
+						<p class="text-sm">Mi horario</p>
+					</div>
+
+					<div
+						class="mt-4 rounded-xl border-2 border-gray-100 p-2 text-sm"
+					>
+						Desarrollo de software
+					</div>
+
+					<div class="mt-3">
+						<ul class="text-sm">
+							<li
+								class="font-semibold border-l-4 border-orange-500 pl-2"
+							>
+								Estructura de datos y programacion oriendata a
+								objetos
+							</li>
+							<li
+								class="mt-2 font-semibold border-l-4 border-color-2 pl-2"
+							>
+								Fundamentos de base de datos
+							</li>
+							<li
+								class="mt-2 font-semibold border-l-4 border-pink-500 pl-2"
+							>
+								Matematicas aplicada al uso de la tecnologias
+							</li>
+							<li
+								class="mt-2 font-semibold border-l-4 border-indigo-500 pl-2"
+							>
+								Sistemas operativos de sotware libre
+							</li>
+							<li
+								class="mt-2 font-semibold border-l-4 border-color-3 pl-2"
+							>
+								Comunicacion 2
+							</li>
+							<li
+								class="mt-2 font-semibold border-l-4 border-color-4 pl-2"
+							>
+								Proyecto integrador desarollo software 2
+							</li>
+							<li
+								class="mt-2 font-semibold border-l-4 border-blue-700 pl-2"
+							>
+								Proyecto Certificador de desarrollo de sotware 1
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+
+	.border-color-2{
+		border-color: rgb(23, 195, 178);
+	}
+	.border-color-3{
+		border-color: rgb(132, 204, 22);
+	}
+	.border-color-4{
+		border-color: rgb(27, 88, 86)
+	}
+
+	.posts-actions {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		font-weight: 500;
+		--tw-text-opacity: 1;
+		color: rgba(127, 135, 148, var(--tw-text-opacity));
+	}
+	.post-reaction {
+		font-size: 0.875rem;
+		line-height: 1.063rem;
+		color: rgba(127, 135, 148, 1);
+		font-weight: 700;
+	}
+</style>

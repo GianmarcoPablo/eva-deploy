@@ -1,0 +1,163 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+---
+
+<Layout title="Post">
+    <div>
+        <header class="bg-white border-b px-5 py-3">
+            <p class="text-xl font-bold">
+                Herramientas de Programación I
+            </p>
+        </header>
+        <div
+            class="bg-white mt-4 pt-5 pb-7 shadow rounded-xl mx-5 px-4 flex gap-4"
+        >
+            <div class="w-[76%]">
+                <p class="font-semibold mb-4 text-sm">
+                    Actualmente estás en la semana 14 de 14
+                </p>
+                <div class="h-2-custom w-full bg-gray-200 rounded-full mt-2">
+                    <div
+                        class="h-full bg-green-400 rounded-full"
+                        style="width: 100%;"
+                    >
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <p class="flex items-center mt-5 text-sm">100%</p>
+                <select
+                    class="border h-12 text-xs px-3 mt-2 border-gray-300 rounded-md w-80"
+                    onchange="location = this.value;"
+                >
+                    <option value="/clases">Clases</option>
+                    <option value="/estudiantes/cursos/Herramientas-de-Programación-I/curso3"
+                        >Notas</option
+                    >
+                    <option value="">Asistencias</option>
+                    <option value="">Contactos</option>
+                    <option value="">Informacion</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="mt-14 mx-6">
+            <ul class="flex items-center gap-10 text-sm">
+                <li
+                    class="border-b border-indigo-700 text-indigo-700 font-semibold"
+                >
+                    Resumen
+                </li>
+                <li
+                    class="color-a font-semibold hover:text-indigo-700 cursor-pointer transition-colors"
+                >
+                    Logro 1
+                </li>
+                <li
+                    class="color-a font-semibold hover:text-indigo-700 cursor-pointer transition-colors"
+                >
+                    Logro 2
+                </li>
+                <li
+                    class="color-a font-semibold hover:text-indigo-700 cursor-pointer transition-colors"
+                >
+                    Logro 3
+                </li>
+                <li
+                    class="color-a font-semibold hover:text-indigo-700 cursor-pointer transition-colors"
+                >
+                    Logro 4
+                </li>
+                <li
+                    class="color-a font-semibold hover:text-indigo-700 cursor-pointer transition-colors"
+                >
+                    Examen final
+                </li>
+                <li
+                    class="color-a font-semibold hover:text-indigo-700 cursor-pointer transition-colors"
+                >
+                    Bibliografia
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <p class="sm-custom px-8 mt-9 color-a">
+                Los sistemas de información conservan la integridad de los datos que se procesan a través de la programación, incorporando avances tecnológicos para brindar las herramientas necesarias y pertinentes en la creación de soluciones informáticas que faciliten la administración de datos en una organización donde sean confiables y eficaces. El profesional de programación aprenderá las diferentes arquitecturas del desarrollo de software. La unidad didáctica promueve el desarrollo de proyectos en PYTHON, utilizando diversas metodologías como la Estructura de Datos y la Programación Orientada a Objetos, que sean seguras y funcionales.
+            </p>
+
+            <p class="color-a font-bold px-8 text-sm my-5">
+                Capacidad terminal:
+            </p>
+
+            <ul class="color-a text-sm px-8">
+                <li class="decoration">
+                    La materia de Herramientas de Programación I se enfoca en realizar pruebas exhaustivas a los sistemas de información mediante el uso de metodologías y herramientas tecnológicas especializadas.
+                </li>
+                <li class="decoration">
+                    Se llevan a cabo pruebas de componentes de sistemas de información, empleando técnicas de pseudocódigo y algoritmos.
+                </li>
+            </ul>
+
+            <div class="mx-8 mt-8">
+                <div class="flex gap-3 items-center cursor-pointer">
+                    <div class="activi text-white p-1 rounded-md">
+                        <img
+                            src="https://aulavirtual.idat.edu.pe/theme/image.php/in_zoom/resource/1696028236/monologo"
+                            alt=""
+                            class="h-6 w-6 text-white filter-invert"
+                        />
+                    </div>
+                    <p class="text-sm color-a font-semibold">Silabo</p>
+                </div>
+                <div class="flex gap-3 items-center mt-5 cursor-pointer">
+                    <div class="activi text-white p-1 rounded-md">
+                        <img
+                            src="https://aulavirtual.idat.edu.pe/theme/image.php/in_zoom/resource/1696028236/monologo"
+                            alt=""
+                            class="h-6 w-6 text-white filter-invert"
+                        />
+                    </div>
+                    <p class="text-sm color-a font-semibold">Cronograma</p>
+                </div>
+                <div class="flex gap-3 items-center mt-5 cursor-pointer">
+                    <div class="activi text-white p-1 rounded-md">
+                        <img
+                            src="https://aulavirtual.idat.edu.pe/theme/image.php/in_zoom/resource/1696028236/monologo"
+                            alt=""
+                            class="h-6 w-6 text-white filter-invert"
+                        />
+                    </div>
+                    <p class="text-sm color-a font-semibold">
+                        Requisitos Hadware y Software
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .filter-invert {
+        filter: invert(1);
+    }
+    .activi {
+        background-color: #399be2;
+    }
+    .decoration {
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+    .sm-custom {
+        font-size: 0.9rem /* 14px */;
+        line-height: 1.26rem; /* 20px */
+    }
+    .color-a {
+        color: rgba(127, 135, 148, 25);
+    }
+    .h-2-custom {
+        height: 0.7rem /* 8px */;
+    }
+</style>

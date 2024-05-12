@@ -1,0 +1,56 @@
+---
+import Sidebar from "../components/Sidebar.astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<div class="flex">
+			<Sidebar />
+			<div class="flex-1">
+				<slot />
+			</div>
+		</div>
+	</body>
+</html>
+<style is:global>
+	html {
+		font-family: system-ui, sans-serif;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+	body {
+		background-color: rgba(245, 245, 245, 1);
+	}
+
+	.bolita {
+		width: 10px;
+		height: 10px;
+		background-color: #22c55e;
+		border-radius: 50%;
+		display: inline-block;
+	}
+</style>
